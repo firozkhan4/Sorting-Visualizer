@@ -15,7 +15,7 @@ function sleep(ms) {
 const createArray = () => {
   array = [];
   for (let i = 0; i < size; i++) {
-    array.push(Math.floor(Math.random() * 100) + 1);
+    array.push(Math.floor(Math.random() * 500) + 1);
   }
 };
 

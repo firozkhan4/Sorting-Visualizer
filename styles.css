@@ -14,6 +14,9 @@ body {
   border: 1px rgb(105, 105, 105) solid;
   height: 70px;
   box-shadow: 10px 10px black;
+  display: flex;
+  justify-content: space-between; /* Adjust for logo and nav links */
+  align-items: center;
 }
 
 .logo {
@@ -25,7 +28,7 @@ body {
   display: grid;
   grid-template-columns: 0.4fr 1.6fr;
   height: calc(100% - 95px);
-  padding: 2em 1em;
+  padding: 2em 10em;
   column-gap: 1em;
 }
 
@@ -37,7 +40,7 @@ body {
   max-height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10x;
+  overflow-y: auto; /* Ensure content is scrollable if overflow */
 }
 
 .box {
@@ -53,14 +56,14 @@ body {
   border: 1px solid;
   border-radius: 5px;
   padding: 2em 1em;
-  display: inline-block;
   background-color: white;
 }
 
 .options {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: fit-content;
   row-gap: 1em;
+  margin: auto;
 }
 
 .btn-array {
@@ -73,7 +76,6 @@ body {
   width: 8em;
   border: 1px solid;
   align-items: center;
-  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -85,15 +87,11 @@ body {
   cursor: pointer;
   width: 8em;
   border-radius: 5px;
-  text-wrap: wrap;
   border: 1px solid;
-  align-items: center;
-  vertical-align: middle;
 }
 
 .SortingAlgo option {
   cursor: pointer;
-  border: 1px solid;
 }
 
 .active {
@@ -116,4 +114,95 @@ body {
 
 .footer p {
   text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .main {
+    padding: 2em 6em;
+    grid-template-columns: 1fr; /* Single column layout for tablets */
+  }
+
+  .bars-box {
+    padding: 2em;
+  }
+
+  .aside {
+    height: fit-content;
+  }
+  .aside {
+    margin-top: 1em;
+  }
+
+  .navbar {
+    padding: 1em 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and nav links */
+    align-items: flex-start;
+    padding: 1em 2em;
+  }
+
+  .main {
+    padding: 2em;
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .bars-box,
+  .aside {
+    padding: 1em;
+    border-radius: 5px;
+  }
+
+  .aside {
+    height: fit-content;
+  }
+
+  .box {
+    height: 40px;
+  }
+
+  .btn-array,
+  .SortingAlgo {
+    width: 100%;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1em;
+  }
+
+  .main {
+    padding: 1em;
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+
+  .bars-box,
+  .aside {
+    padding: 1em;
+  }
+
+  .aside {
+    height: fit-content;
+  }
+
+  .box {
+    height: 30px;
+  }
+
+  .btn-array,
+  .SortingAlgo {
+    width: 100%;
+    font-size: small;
+    padding: 2px 6px;
+  }
+
+  .footer p {
+    font-size: small;
+  }
 }
