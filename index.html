@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <section class="logo">Sorting Visualizer</section>
+    </nav>
+    <main class="main">
+      <aside class="aside box-shadow">
+        <div class="options">
+          <button class="btn-array btn-shadow" id="new-array-btn">
+            New Array
+          </button>
+          <button class="btn-array btn-shadow" id="sort-btn">Sort</button>
+          <input
+            type="range"
+            name="rangeInput"
+            id="rangeInput"
+            min="1"
+            max="100"
+            class=""
+          />
+          <section>
+            <select name="SortingAlgo" id="SortingAlgo" class="SortingAlgo">
+              <option value="bubble-sort">Bubble Sort</option>
+              <option value="selection-sort">Selection Sort</option>
+              <option value="insertion-sort">Insertion Sort</option>
+              <option value="merge-sort">Merge Sort</option>
+              <option value="quick-sort">Quick Sort</option>
+              <option value="heap-sort">Heap Sort</option>
+              <option value="shell-sort">Shell Sort</option>
+              <option value="tim-sort">Tim Sort</option>
+              <option value="tree-sort">Tree Sort</option>
+              <option value="smooth-sort">Smooth Sort</option>
+              <option value="counting-sort">Counting Sort</option>
+              <option value="radix-sort">Radix Sort</option>
+              <option value="bucket-sort">Bucket Sort</option>
+              <option value="pigeonhole-sort">Pigeonhole Sort</option>
+              <option value="intro-sort">Intro Sort</option>
+              <option value="cocktail-sort">Cocktail Shaker Sort</option>
+              <option value="gnome-sort">Gnome Sort</option>
+              <option value="odd-even-sort">Odd-Even Sort</option>
+              <option value="bitonic-sort">Bitonic Sort</option>
+              <option value="bogo-sort">Bogo Sort</option>
+              <option value="comb-sort">Comb Sort</option>
+            </select>
+          </section>
+        </div>
+      </aside>
+      <div class="bars-box box-shadow" id="bars-box"></div>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; 2024 By
+        <a href="https://github.com/firozkhan4">Firoz Khan</a>
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
