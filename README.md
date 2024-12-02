@@ -68,7 +68,7 @@ This is a web-based **Sorting Visualizer** that allows users to visually explore
 ## Getting Started
 
 ### 1. **Clone the Repository:**
-   ```
+   ```bash
    git clone https://github.com/firozkhan4/sorting-visualizer.git
    cd sorting-visualizer
    ```
