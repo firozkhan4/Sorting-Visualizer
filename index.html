@@ -50,6 +50,17 @@
               <option value="comb-sort">Comb Sort</option>
             </select>
           </section>
+
+          <button id="algo-info-btn" class="btn-array btn-shadow">Info</button>
+
+          <!-- Modal for Algorithm Info -->
+          <div id="algo-info-modal" class="modal">
+            <div class="modal-content box-shadow">
+              <span class="close-btn" id="close-modal">&times;</span>
+              <h2 id="modal-title">Algorithm Info</h2>
+              <p id="modal-description"></p>
+            </div>
+          </div>
         </div>
       </aside>
       <div class="bars-box box-shadow" id="bars-box"></div>
@@ -62,6 +73,6 @@
       </p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js" type="module"></script>
   </body>
 </html>
