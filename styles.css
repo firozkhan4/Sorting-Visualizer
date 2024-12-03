@@ -15,8 +15,17 @@ body {
   height: 70px;
   box-shadow: 10px 10px black;
   display: flex;
-  justify-content: space-between; /* Adjust for logo and nav links */
+  justify-content: space-between;
   align-items: center;
+}
+
+.github {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 2em;
+}
+
+.github:hover {
+  transform: scale(1.2);
 }
 
 .logo {
@@ -143,14 +152,14 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack logo and nav links */
+    flex-direction: row;
     align-items: flex-start;
     padding: 1em 2em;
   }
 
   .main {
     padding: 2em;
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr;
   }
 
   .bars-box,
